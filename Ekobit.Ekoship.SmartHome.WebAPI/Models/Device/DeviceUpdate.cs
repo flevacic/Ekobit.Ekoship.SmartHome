@@ -8,8 +8,6 @@
 
         public float CurrentValue { get; set; }
 
-        public DateTime LastUpdated { get; set; }
-
         public int TypeId { get; set; }
 
         public int UnitId { get; set; }
