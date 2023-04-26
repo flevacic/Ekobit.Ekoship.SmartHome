@@ -30,7 +30,7 @@ namespace Ekobit.Ekoship.SmartHome.WebAPI.Controllers
         }
 
 
-        [HttpGet("homeId")]
+        [HttpGet("home/{homeId}")]
         [Produces(typeof(IEnumerable<DeviceDetails>))]
         public IActionResult GetHomeDevices(int homeId)
         {
