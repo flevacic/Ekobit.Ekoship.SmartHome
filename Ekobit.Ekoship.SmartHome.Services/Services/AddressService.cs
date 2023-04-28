@@ -8,7 +8,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
         private readonly IAddressRepository _addressRepository;
 
         public AddressService(IAddressRepository addressRepository)
-        { 
+        {
             _addressRepository = addressRepository;
         }
 
@@ -24,8 +24,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
 
         public int CreateAddress(Address address)
         {
-            var newAddressId = _addressRepository.Create(address);
-            return newAddressId;
+            return _addressRepository.Create(address);
         }
 
         public int UpdateAddress(Address address)
