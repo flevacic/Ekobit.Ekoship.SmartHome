@@ -1,7 +1,8 @@
 ﻿using Ekobit.Ekoship.SmartHome.Data.Models;
 using Ekobit.Ekoship.SmartHome.Data.Contracts;
+using Ekobit.Ekoship.SmartHome.Services.Contracts;
 
-namespace Ekobit.Ekoship.SmartHome.Services.Contracts
+namespace Ekobit.Ekoship.SmartHome.Services
 {
     public class HomeService : IHomeService
     {

@@ -13,12 +13,11 @@ namespace Ekobit.Ekoship.SmartHome.Desktop
         private readonly IDeviceTypeService _deviceTypeService;
         private readonly IUnitService _unitService;
 
-        private IEnumerable<Home> _homes;
-        private IEnumerable<Device> _devices;
-        private IEnumerable<Address> _addresses;
-        private IEnumerable<DeviceType> _deviceTypes;
-        private IEnumerable<Unit> _units;
-
+        private IEnumerable<Home> _homes = null!;
+        private IEnumerable<Device> _devices = null!;
+        private IEnumerable<Address> _addresses = null!;
+        private IEnumerable<DeviceType> _deviceTypes = null!;
+        private IEnumerable<Unit> _units = null!;
 
         public FormSmartHome(IHomeService homeService, IDeviceService deviceService, IAddressService addressService,
                              IDeviceTypeService deviceTypeService, IUnitService unitService)
@@ -32,7 +31,6 @@ namespace Ekobit.Ekoship.SmartHome.Desktop
             _unitService = unitService;
 
             SetDataSources();
-
         }
 
         private void SetDataSources()
