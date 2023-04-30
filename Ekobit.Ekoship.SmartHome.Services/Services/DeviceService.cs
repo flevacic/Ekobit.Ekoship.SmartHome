@@ -15,7 +15,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
 
         public IEnumerable<Device> GetAllDevices()
         {
-            return _deviceRepository.GetAll();
+            return _deviceRepository.GetAll().ToList();
         }
 
         public IEnumerable<Device> GetAllHomeDevices(int homeId)

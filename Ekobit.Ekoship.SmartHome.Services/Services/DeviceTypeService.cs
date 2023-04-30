@@ -15,7 +15,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
 
         public IEnumerable<DeviceType> GetAllDeviceTypes()
         {
-            return _DeviceTypeRepository.GetAll();
+            return _DeviceTypeRepository.GetAll().ToList();
         }
 
         public DeviceType? GetDeviceTypeById(int id)

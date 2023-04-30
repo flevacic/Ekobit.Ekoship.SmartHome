@@ -14,7 +14,7 @@ namespace Ekobit.Ekoship.SmartHome.Services.Contracts
 
         public IEnumerable<Home> GetAllHomes()
         {
-            return _homeRepository.GetAll();
+            return _homeRepository.GetAll().ToList();
         }
 
         public Home? GetHomeById(int id)

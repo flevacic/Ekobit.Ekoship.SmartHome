@@ -15,7 +15,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
 
         public IEnumerable<Address> GetAllAddresses()
         {
-            return _addressRepository.GetAll();
+            return _addressRepository.GetAll().ToList();
         }
 
         public Address? GetAddressById(int id)

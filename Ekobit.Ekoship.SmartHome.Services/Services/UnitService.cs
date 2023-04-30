@@ -15,7 +15,7 @@ namespace Ekobit.Ekoship.SmartHome.Services
 
         public IEnumerable<Unit> GetAllUnits()
         {
-            return _unitRepository.GetAll();
+            return _unitRepository.GetAll().ToList();
         }
 
         public Unit? GetUnitById(int id)
