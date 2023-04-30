@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Ekobit.Ekoship.SmartHome.Data.Models;
 using Ekobit.Ekoship.SmartHome.Services.Contracts;
-using Ekobit.Ekoship.SmartHome.WebAPI.Models.Address;
+using Ekobit.Ekoship.SmartHome.Model.Models.Address;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ekobit.Ekoship.SmartHome.WebAPI.Controllers

@@ -1,8 +1,11 @@
 using Ekobit.Ekoship.SmartHome.Data;
+using Ekobit.Ekoship.SmartHome.Data.Contracts;
+using Ekobit.Ekoship.SmartHome.Data.Repositories;
 using Ekobit.Ekoship.SmartHome.Services;
 using Ekobit.Ekoship.SmartHome.Services.Contracts;
-using Ekobit.Ekoship.SmartHome.Services.Repositories;
+using Ekobit.Ekoship.SmartHome.WebAPI.MappingProfiles;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +28,7 @@ builder.Services.AddScoped<IDeviceTypeService, DeviceTypeService>();
 builder.Services.AddScoped<IDeviceService, DeviceService>();
 
 // Inject automapper
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(AddressProfile)));
 
 // Inject controllers and API infrastructure
 builder.Services.AddControllers();

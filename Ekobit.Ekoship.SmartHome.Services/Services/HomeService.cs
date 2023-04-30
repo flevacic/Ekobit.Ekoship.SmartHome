@@ -1,4 +1,5 @@
 ﻿using Ekobit.Ekoship.SmartHome.Data.Models;
+using Ekobit.Ekoship.SmartHome.Data.Contracts;
 
 namespace Ekobit.Ekoship.SmartHome.Services.Contracts
 {

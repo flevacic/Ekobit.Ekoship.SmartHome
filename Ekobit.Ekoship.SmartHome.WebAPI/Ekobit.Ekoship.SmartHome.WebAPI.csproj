@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ekobit.Ekoship.SmartHome.Data\Ekobit.Ekoship.SmartHome.Data.csproj" />
+    <ProjectReference Include="..\Ekobit.Ekoship.SmartHome.Model\Ekobit.Ekoship.SmartHome.Model.csproj" />
     <ProjectReference Include="..\Ekobit.Ekoship.SmartHome.Services\Ekobit.Ekoship.SmartHome.Services.csproj" />
   </ItemGroup>
 
