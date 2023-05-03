@@ -11,6 +11,7 @@ namespace Ekobit.Ekoship.SmartHome.WebAPI.MappingProfiles
             CreateMap<Home, HomeList>();
 
             CreateMap<Home, HomeDetails>()
+                .ForMember(_ => _.AddressId, _ => _.MapFrom(_ => _.Address != null ? _.Address.Id : (int?)null))
                 .ForMember(_ => _.StreetName, _ => _.MapFrom(_ => _.Address != null ? _.Address.StreetName : String.Empty))
                 .ForMember(_ => _.Number, _ => _.MapFrom(_ => _.Address != null ? _.Address.Number : (int?)null))
                 .ForMember(_ => _.City, _ => _.MapFrom(_ => _.Address != null ? _.Address.City : String.Empty))

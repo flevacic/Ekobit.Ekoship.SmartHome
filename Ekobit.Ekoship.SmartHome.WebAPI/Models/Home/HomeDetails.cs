@@ -6,6 +6,8 @@
 
         public string Name { get; set; } = null!;
 
+        public int? AddressId { get; set; }
+
         public string? StreetName { get; set; }
 
         public int? Number { get; set; }
