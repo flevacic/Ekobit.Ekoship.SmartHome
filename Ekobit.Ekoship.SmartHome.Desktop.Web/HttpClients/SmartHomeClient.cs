@@ -9,7 +9,7 @@ namespace Ekobit.Ekoship.SmartHome.Desktop.Web.HttpClients
 {
     internal class SmartHomeClient : ISmartHomeClient
     {
-        private const string BaseApiAddress = "https://ekoshipsmarthome.azurewebsites.net/";
+        private const string BaseApiAddress = "https://localhost:7169/";
         private readonly JsonSerializerOptions _jsonSerializerOptions;
 
         public readonly HttpClient _httpClient;
